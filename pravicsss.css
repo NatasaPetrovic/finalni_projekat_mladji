@@ -1,0 +1,10 @@
+#pozadina{
+    background-color:#028ad6;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50%;
+    box-shadow: 0px -8px 35px #000000;
+}
