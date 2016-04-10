@@ -2,7 +2,10 @@
 include "header.html"
 ?>
 <head>
+<<<<<<< HEAD
 <link rel="icon" href="http://megaicons.net/static/img/icons_sizes/66/163/16/under-construction-icon.png" type="image/png">
+=======
+>>>>>>> eks-di-di-di
 <title>U konstrukciji</title>
 </head>
 <body>
