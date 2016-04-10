@@ -1,0 +1,349 @@
+body{
+	
+	background-color:#f4f4f4;
+	
+}
+#headerimagebg{
+	
+	background-color:#028ad6;
+
+    width:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:400px;
+	
+	box-shadow:0px -8px 35px #000000;
+	
+	z-index:-100;
+	
+}
+#main-content-window-nem{
+	
+	background-color:#ffffff;
+	width:1000px;
+	height:550px;
+	position:fixed;
+	left:100px;
+	top:125px;
+		box-shadow:0px 5px 35px #323232;
+
+	border-radius:5px 5px 5px 5px;
+	
+	
+	
+}
+#avatar-plaintext{
+	
+	width:64px;	
+	border-radius:100px;
+	
+			box-shadow:0px 0px 15px #323232;
+
+	
+}
+#plain-text{
+	
+	font-family:arial;
+	
+	margin-top:30px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:50px;
+	
+}
+#exp-title{
+	
+	font-size:30px;
+	
+}
+.imgavfave{
+	
+	border-radius:100px;
+				box-shadow:0px 0px 25px #323232;
+
+	
+}
+
+#callfavourites{
+	
+	border:none;
+	position:fixed;
+	top:30px;
+	width:48px;
+	height:48px;
+	border-radius:100px;
+	background-color:#ff0e7a;
+	box-shadow:0px 0px 25px #323232;
+	left:125px;
+	
+}
+
+
+#faveavatar1{
+	
+	position:absolute;
+	left:204px;
+	margin-right:15px;
+	top:30px;
+	
+	width:48px;
+	height:48px;
+				
+				border:none;
+
+}
+
+#faveavatar1:hover{
+	
+	top:25px;
+	transition: all 0.2s ease;
+	
+}
+#faveavatar2{
+	
+	position:absolute;
+	left:268px;
+	margin-right:15px;
+	top:30px;
+	
+	width:48px;
+	height:48px;
+				
+				border:none;
+
+}
+
+#faveavatar2:hover{
+	
+	top:25px;
+	transition: all 0.2s ease;
+	
+}
+
+#faveavatar3{
+	
+	position:absolute;
+	left:331px;
+	margin-right:15px;
+	top:30px;
+	
+	width:48px;
+	height:48px;
+				
+				border:none;
+
+}
+
+#faveavatar3:hover{
+	
+	top:25px;
+	transition: all 0.2s ease;
+	
+}
+#faveit{
+	
+border:none;
+border:2px solid #ff0e7a;
+background-color:#ffffff;
+border-radius:2px;
+color:#ffffff;
+height:32px;
+width:70px;
+	cursor:pointer;
+}
+#faveit:active{
+	
+	background-color:#ff0e7a;
+	transition: all 0.2s ease;
+	
+	
+}
+#actions{
+	
+	border:none;
+	border-radius:5px;
+	
+
+}
+
+#mailme{
+	
+	border:none;
+border:2px solid #43b4ff;
+background-color:#ffffff;
+border-radius:2px;
+color:#ffffff;
+height:32px;
+width:40px;
+		cursor:pointer;
+}
+
+#mailme:active{
+	
+	background-color:#43b4ff;
+	transition: all 0.2s ease;
+	
+	
+}
+
+#leave{
+	
+	position:fixed;
+	bottom:75px;
+	right:75px;
+	
+	width:64px;
+	height:64px;
+	
+	background-color:#028ad6;
+	border:none;
+	
+	border-radius:100px;
+	
+	box-shadow:2.5px 2.5px 15px #4c4c4c;
+	transition: all 0.5s ease;
+	cursor:pointer;
+}
+#menu-button{
+	
+position:fixed;
+top:25px;
+left:20px;
+border:none;
+width:64px;
+height:64px;	
+border-radius:-100px;
+cursor:pointer;
+transition: all 0.5s ease;
+
+background-color:#028ad6;	
+}
+#menu-button:hover{
+
+border-radius:100px;
+background-color:#016eab;
+
+}
+#menu-button:active{
+	
+	background-color:#016095;
+	
+}
+
+#cmenu-button{
+	
+position:fixed;
+top:25px;
+left:20px;
+border:none;
+width:64px;
+height:64px;	
+border-radius:-100px;
+cursor:pointer;
+transition: all 0.5s ease;
+
+background-color:#028ad6;	
+}
+#cmenu-button:hover{
+
+border-radius:100px;
+background-color:#016eab;
+
+}
+#cmenu-button:active{
+	
+	background-color:#016095;
+	
+}
+
+#leave:hover{
+	
+	background-color:#016eab;
+	
+}
+#leave:active{
+	background-color:#016095;
+		box-shadow:5px 5px 15px #4c4c4c;
+
+	
+}
+
+
+
+
+#menu{
+	
+	height:100%;
+	width:400px;
+	box-shadow:5px 5px 15px #4c4c4c;
+	background-color:#ffffff;
+	z-index:99999;
+	position:fixed;
+	left:0px;
+	top:0px;
+	bottom:0px;
+	
+	font-family:arial;
+
+	visibility:hidden;
+	
+}
+#menujpg1{
+	width:48px;height:48px;
+	position:fixed;
+	left:10px;
+	top:150px;
+	
+	
+}
+#menujpg2{
+width:48px;height:48px;	
+
+position:fixed;
+	left:10px;
+	top:268px;
+	
+	
+}
+#menujpg3{
+
+	width:48px;height:48px;
+	
+	position:fixed;
+	left:10px;
+	top:386px;
+	
+}
+
+#menulist{
+	
+	list-style-type:none;
+	display:inline;
+	padding:0
+	
+}
+#banner-menu{
+	background-color:#028ad6;
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:125px;
+	width:400px;
+	
+}
+.devider{
+
+color:#028ad6;
+border:0.5px dotted #028ad6;
+
+}
+
+
+
+
+
+
+

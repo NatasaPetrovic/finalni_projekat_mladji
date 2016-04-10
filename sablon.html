@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="cssmain.css">
+  
+  <script>
+  
+  function openMenu(){
+  
+  document.getElementById("menu").style.visibility="visible";
+  }
+  function closeMenu(){
+  
+  document.getElementById("menu").style.visibility="hidden";
+  }
+  
+  function goodbye() {
+  if (confirm("Goodbye?")) {
+    close();
+  }
+  
+  else{
+  
+  alert("Ok,Hello!");
+  
+  }
+}
+  </script>
+  
+  </head>
+<div id="rounder" >
+  <header>
+  
+     <div id="headerimagebg">
+	
+	
+	
+	 </div>
+  
+  </header>
+  
+  <body>
+  
+  
+  
+  <button id="menu-button" onclick="openMenu()"><img src="./images/ico/Material Icons_e5d2(0)_128.png" width="48"></button><div id="favourites"> <button id="callfavourites"><img src="./images/ico/Material Icons_e87d(7)_128.png" width="32"></button> <img src="./images/users/filip.jpg" id="faveavatar1" class="imgavfave"> <img src="./images/users/nadja.jpg" id="faveavatar2" class="imgavfave"> <img src="./images/users/nikola.jpg" id="faveavatar3" class="imgavfave"> </div>
+  
+    <div id="main-content-window-nem">
+	
+	
+	
+	   <div id="plain-text">
+	   
+	  
+	   
+	<div id="textautor">  <img src="./images/users/filip.jpg" id="avatar-plaintext"><p id="exp-title">Filip <b>Škembarević</b></p><br/></div>
+	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
+	 <br/> <p  id="exp-plaintext" style="text-align:left;">
+	   <b  style="text-align:left;">Godiste </b> 2002.<br/>
+	   <hr  class="devider">
+	   <b  style="text-align:left;">Godina u System Pro-u </b> 4.
+	   <hr  class="devider">
+	   <b  style="text-align:left;">Hobiji </b> Programiranje,igranje igrica,...
+	   <hr  class="devider">
+	   <b  style="text-align:left;">Omiljena igrica </b> HalfLife
+	   <hr class="devider">
+	   
+	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	   </p>
+	  
+	   </div>
+	
+	
+	
+	</div>
+	
+	
+	
+	
+	
+	</div>
+	
+	
+	<div id="menu" >
+	
+	<div id="banner-menu">
+	
+	<button id="cmenu-button" onclick="closeMenu()"><img src="./images/ico/Material Icons_e5c4(0)_128.png" width="48"></button>
+	
+	
+	</div>
+	
+	<ul id="menulist">
+<li id="menujpg1" ><img src="./images/users/filip.jpg" style="width:48px;height:48px;border-radius:100px;">Filip Škembarević</li>
+<li id="menujpg2" ><img src="./images/users/nadja.jpg" style="width:48px;height:48px;border-radius:100px;">Nadja Živković</li>
+<li id="menujpg3" ><img src="./images/users/nikola.jpg" style="width:48px;height:48px;border-radius:100px;">Nikola Ignjatović</li>
+
+
+	</ul>
+	
+	</div>
+	
+	
+	<footer>
+	
+	<button id="leave" onclick="setTimeout(goodbye, 3000);"><img src="./images/ico/Material Icons_e536(0)_256.png" width="48"></button>
+	 
+	
+	</footer>
+  
+  </body>
+  
+</html>
