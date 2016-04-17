@@ -26,6 +26,7 @@ include "header.html"
             
             <img src="images/users/filip.jpg" class="lala" style="border-radius:100px;">
             <h3>Filip Škembarević</h3>
+            <h5 color="gray">front-end</h5>
             <br>
 			
         </div>
@@ -34,22 +35,118 @@ include "header.html"
               
             <img src="images/users/nadja.jpg" class="lala" style="border-radius:100px;">
             <h3>Nađa Živković</h3>
+            <h5 color="gray">dizajn</h5>
            <br>
 		   
             </div>
         
                 
-        <div class="col-lg-4" width="100">
+        <div class="col-lg-4">
               
             <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
             <h3>Nikola Ignjatović</h3>
+            <h5 color="gray">front-end</h5>
            <br>
 		   
             </div>
+            <br />
+            <br />
+            
+                    <div class="col-lg-4">
+              
+            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <h3>Mihajlo Trumić</h3>
+            <h5 color="gray">front-end</h5>
+           <br>
+		   
+            </div>
+            
+            
+                    <div class="col-lg-4">
+              
+            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <h3>Lazar Ilić</h3>
+            <h5 color="gray">front-end</h5>
+           <br>
+		   
+            </div>
+            
+            
+                    <div class="col-lg-4">
+              
+            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <h3>Luka Ratić</h3>
+            <h5 color="gray">dizajn</h5>
+           <br>
+		   
+            </div>
+            
+                        <br />
+            <br />
+            
+                    <div class="col-lg-4">
+              
+            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <h3>Dušan Mijatović</h3>
+            <h5 color="gray">back-end/tester</h5>
+           <br>
+		   
+            </div>
+            
+            
+
+		   
+            
+            
+                    <div class="col-lg-4">
+              
+            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <h3>Aleksa Bijelić</h3>
+            <h5 color="gray">tester</h5>
+           <br>
+		   
+            </div>
+            
+                        <br />
+            <br />
+            
+                    <div class="col-lg-4">
+              
+            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <h3>Vuk Vulević</h3>
+            <h5 color="gray">dizajn</h5>
+           <br>
+		   
+            </div>
+            
+            
+                    <div class="col-lg-4">
+              
+            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <h3>Vuk Raković</h3>
+            <h5 color="gray">dizajn</h5>
+           <br>
+		   
+            </div>
+            
+            
+                    <div class="col-lg-4">
+              
+            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <h3>Sofija Ilić</h3>
+            <h5 color="gray">dizajn</h5>
+           <br>
+           </div>
+           
+                               <div class="col-lg-4">
+              
+            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <h3>David Đumić</h3>
+            <h5 color="gray">radi svoj projekat</h5>
+           <br>
+          
         
     
-	<br>
-	<br>
 	
 	
 	
