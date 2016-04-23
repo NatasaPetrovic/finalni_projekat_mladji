@@ -30,7 +30,7 @@ body{
 	width:1000px;
 	height:550px;
 	position:fixed;
-	left:100px;
+	left:440px;
 	top:125px;
 		box-shadow:0px 5px 35px #323232;
 
@@ -89,9 +89,9 @@ body{
 #faveavatar1{
 	
 	position:absolute;
-	left:204px;
+	left:450px;
 	margin-right:15px;
-	top:30px;
+	top:60px;
 	
 	width:48px;
 	height:48px;
@@ -109,9 +109,9 @@ body{
 #faveavatar2{
 	
 	position:absolute;
-	left:268px;
+	left:510px;
 	margin-right:15px;
-	top:30px;
+	top:60px;
 	
 	width:48px;
 	height:48px;
@@ -130,9 +130,9 @@ body{
 #faveavatar3{
 	
 	position:absolute;
-	left:331px;
+	left:570px;
 	margin-right:15px;
-	top:30px;
+	top:60px;
 	
 	width:48px;
 	height:48px;
@@ -142,6 +142,189 @@ body{
 }
 
 #faveavatar3:hover{
+	
+	top:25px;
+	transition: all 0.2s ease;
+	
+}
+#faveavatar4{
+	
+	position:absolute;
+	left:630px;
+	margin-right:15px;
+	top:60px;
+	
+	width:48px;
+	height:48px;
+				
+				border:none;
+
+}
+
+#faveavatar4:hover{
+	
+	top:25px;
+	transition: all 0.2s ease;
+	
+}
+#faveavatar5{
+	
+	position:absolute;
+	left:690px;
+	margin-right:15px;
+	top:60px;
+	
+	width:48px;
+	height:48px;
+				
+				border:none;
+
+}
+
+#faveavatar5:hover{
+	
+	top:25px;
+	transition: all 0.2s ease;
+	
+}
+
+#faveavatar6{
+	
+	position:absolute;
+	left:750px;
+	margin-right:15px;
+	top:60px;
+	
+	width:48px;
+	height:48px;
+				
+				border:none;
+
+}
+
+#faveavatar6:hover{
+	
+	top:25px;
+	transition: all 0.2s ease;
+	
+}
+#faveavatar7{
+	
+	position:absolute;
+	left:810px;
+	margin-right:15px;
+	top:60px;
+	
+	width:48px;
+	height:48px;
+				
+				border:none;
+
+}
+
+#faveavatar7:hover{
+	
+	top:25px;
+	transition: all 0.2s ease;
+	
+}
+#faveavatar8{
+	
+	position:absolute;
+	left:870px;
+	margin-right:15px;
+	top:60px;
+	
+	width:48px;
+	height:48px;
+				
+				border:none;
+
+}
+
+#faveavatar8:hover{
+	
+	top:25px;
+	transition: all 0.2s ease;
+	
+}
+
+#faveavatar9{
+	
+	position:absolute;
+	left:930px;
+	margin-right:15px;
+	top:60px;
+	
+	width:48px;
+	height:48px;
+				
+				border:none;
+
+}
+
+#faveavatar9:hover{
+	
+	top:25px;
+	transition: all 0.2s ease;
+	
+}
+#faveavatar10{
+	
+	position:absolute;
+	left:990px;
+	margin-right:15px;
+	top:60px;
+	
+	width:48px;
+	height:48px;
+				
+				border:none;
+
+}
+
+#faveavatar10:hover{
+	
+	top:25px;
+	transition: all 0.2s ease;
+	
+}
+#faveavatar11{
+	
+	position:absolute;
+	left:1050px;
+	margin-right:15px;
+	top:60px;
+	
+	width:48px;
+	height:48px;
+				
+				border:none;
+
+}
+
+#faveavatar11:hover{
+	
+	top:25px;
+	transition: all 0.2s ease;
+	
+}
+
+#faveavatar12{
+	
+	position:absolute;
+	left:1110px;
+	margin-right:15px;
+	top:60px;
+	
+	width:48px;
+	height:48px;
+				
+				border:none;
+
+}
+
+#faveavatar12:hover{
 	
 	top:25px;
 	transition: all 0.2s ease;
@@ -299,7 +482,7 @@ background-color:#016eab;
 	width:48px;height:48px;
 	position:fixed;
 	left:10px;
-	top:150px;
+	top:120px;
 	
 	
 }
