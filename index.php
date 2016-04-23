@@ -154,5 +154,9 @@ include "header.html"
     </center>
     </div>
     </div>
+    <footer id="foteraja">
+        &copy;copyright 2016 , Created by our team
+    </footer>
+    </div>
 </body>
 </html>

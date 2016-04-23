@@ -535,6 +535,11 @@ border:0.5px dotted #028ad6;
 	height:100px;
 }
 
+footer {
+	text-align: center;
+	color: #e5e5e5;
+}
+
 @media screen and (max-width: 1201px) {
     #main-content-window-nem{
 	
@@ -552,6 +557,7 @@ border:0.5px dotted #028ad6;
 	
 }
 }
+
 
 
 
