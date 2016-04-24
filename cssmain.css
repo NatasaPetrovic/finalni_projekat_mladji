@@ -537,7 +537,7 @@ border:0.5px dotted #028ad6;
 
 footer {
 	text-align: center;
-	color: #e5e5e5;
+	background-color: #e5e5e5;
 }
 
 @media screen and (max-width: 1201px) {
