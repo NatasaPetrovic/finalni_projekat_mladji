@@ -18,6 +18,9 @@ include "header.html"
 	</p>
 	</div>
 	
+	<img src="http://www.footeducation.com/images/fpi/fpi-lateral.png" /> <h1>ER</h1
+	>
+	
 	<h1>Ko su članovi grupe</h1>
     
 <br>    <div class="row">
