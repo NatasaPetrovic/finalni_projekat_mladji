@@ -18,8 +18,8 @@ include "header.html"
 	</p>
 	</div>
 	
-	<img src="http://www.footeducation.com/images/fpi/fpi-lateral.png" /> <h1>ER</h1
-	>
+	<!--<img src="http://www.footeducation.com/images/fpi/fpi-lateral.png" /> <h1>ER</h1
+	>-->
 	
 	<h1>Ko su članovi grupe</h1>
     
@@ -158,7 +158,7 @@ include "header.html"
     </div>
     </div>
     <footer id="foteraja">
-        &copy;copyright 2016 , Created by our team
+        &copy; Copyright 2016, Created by our team. All rights reserveed.
     </footer>
     </div>
 </body>
