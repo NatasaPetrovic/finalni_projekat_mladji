@@ -57,7 +57,7 @@ include "header.html"
             
                     <div class="col-lg-4">
               
-            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <img src="images/users/mihajlo.jpg" class="lala" style="border-radius:100px;">
             <h3>Mihajlo Trumić</h3>
             <h5 color="gray">front-end</h5>
            <br>
@@ -67,7 +67,7 @@ include "header.html"
             
                     <div class="col-lg-4">
               
-            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <img src="images/users/lazar.jpg" class="lala" style="border-radius:100px;">
             <h3>Lazar Ilić</h3>
             <h5 color="gray">front-end</h5>
            <br>
@@ -77,7 +77,7 @@ include "header.html"
             
                     <div class="col-lg-4">
               
-            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <img src="images/users/luka.jpg" class="lala" style="border-radius:100px;">
             <h3>Luka Ratić</h3>
             <h5 color="gray">dizajn</h5>
            <br>
@@ -89,7 +89,7 @@ include "header.html"
             
                     <div class="col-lg-4">
               
-            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <img src="images/users/dusan.jpg" class="lala" style="border-radius:100px;">
             <h3>Dušan Mijatović</h3>
             <h5 color="gray">back-end/tester</h5>
            <br>
@@ -103,7 +103,7 @@ include "header.html"
             
                     <div class="col-lg-4">
               
-            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <img src="images/users/aleksa.jpg" class="lala" style="border-radius:100px;">
             <h3>Aleksa Bijelić</h3>
             <h5 color="gray">tester</h5>
            <br>
@@ -115,7 +115,7 @@ include "header.html"
             
                     <div class="col-lg-4">
               
-            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <img src="images/users/vukvu.jpg" class="lala" style="border-radius:100px;">
             <h3>Vuk Vulević</h3>
             <h5 color="gray">dizajn</h5>
            <br>
@@ -125,7 +125,7 @@ include "header.html"
             
                     <div class="col-lg-4">
               
-            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <img src="images/users/vukr.jpg" class="lala" style="border-radius:100px;">
             <h3>Vuk Raković</h3>
             <h5 color="gray">dizajn</h5>
            <br>
@@ -135,7 +135,7 @@ include "header.html"
             
                     <div class="col-lg-4">
               
-            <img src="images/users/nikola.jpg" class="lala" style="border-radius:100px;">
+            <img src="images/users/sofija.jpg" class="lala" style="border-radius:100px;">
             <h3>Sofija Ilić</h3>
             <h5 color="gray">dizajn</h5>
            <br>
