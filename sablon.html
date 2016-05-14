@@ -87,7 +87,92 @@
   <body>
   
 
-   <img src="./images/users/filip.jpg" id="faveavatar1" class="imgavfave"> <img src="./images/users/nadja.jpg" id="faveavatar2" class="imgavfave"> <img src="./images/users/nikola.jpg" id="faveavatar3" class="imgavfave"> <img src="./images/users/mihajlo.jpg" id="faveavatar4" class="imgavfave"> <img src="./images/users/lazar.jpg" id="faveavatar5" class="imgavfave"> <img src="./images/users/luka.jpg" id="faveavatar6" class="imgavfave"> <img src="./images/users/aleksa.jpg" id="faveavatar7" class="imgavfave"> <img src="./images/users/dusan.jpg" id="faveavatar8" class="imgavfave"> <img src="./images/users/nikola.jpg" id="faveavatar9" class="imgavfave"><img src="./images/users/sofija.jpg" id="faveavatar10" class="imgavfave"> <img src="./images/users/vukr.jpg" id="faveavatar11" class="imgavfave"> <img src="./images/users/vukvu.jpg" id="faveavatar12" class="imgavfave"> </div>
+ <button id="expandusers100" onclick="howusers()"><img src="images/ico/Material Icons_e5cc(0)_512.png" width="38"></button><div id="users100">  <img src="./images/users/filip.jpg" id="faveavatar1" class="imgavfave"> <img src="./images/users/nadja.jpg" id="faveavatar2" class="imgavfave"> <img src="./images/users/nikola.jpg" id="faveavatar3" class="imgavfave"> <img src="./images/users/mihajlo.jpg" id="faveavatar4" class="imgavfave"> <img src="./images/users/lazar.jpg" id="faveavatar5" class="imgavfave"> <img src="./images/users/luka.jpg" id="faveavatar6" class="imgavfave"> <img src="./images/users/aleksa.jpg" id="faveavatar7" class="imgavfave"> <img src="./images/users/dusan.jpg" id="faveavatar8" class="imgavfave"> <img src="./images/users/nikola.jpg" id="faveavatar9" class="imgavfave"><img src="./images/users/sofija.jpg" id="faveavatar10" class="imgavfave"> <img src="./images/users/vukr.jpg" id="faveavatar11" class="imgavfave"> <img src="./images/users/vukvu.jpg" id="faveavatar12" class="imgavfave"> </div>
+ <button id="expandusers101" onclick="ideusers()"><img src="images/ico/Material Icons_e5cc(0)_512.png" width="38" style="transform:rotate(180deg);"></button><div id="users100"> 
+  <style>
+  	
+  	#expandusers100{
+  		
+  		position:fixed;
+  		top:72px;
+  		left:15px;
+  		border-radius:100px;
+  		width:48px;
+  		height:48px;
+  		border:none;
+  		background-color:#089093;
+	cursor:pointer;
+  		transition:1s ease;
+  	}
+  
+  	#expandusers100:active{
+  		
+  		box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.75);
+
+  		
+  	}
+  		#expandusers101:active{
+  		
+  		box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.75);
+
+  		
+  	}
+  	#users100{
+  		
+  		position:fixed;
+  		left:-100%;
+  		top:0px;
+  		transition:1s ease;
+  		
+  		cursor:pointer;
+  	}
+  	
+  	#expandusers101{
+	cursor:pointer;
+  		position:fixed;
+  		top:72px;
+  		left:-100%;
+  		border-radius:100px;
+  		width:48px;
+  		height:48px;
+  		border:none;
+  		background-color:#089093;
+  		transition:1s ease;
+  	}
+  </style>
+  
+  
+  <script type="text/javascript">
+  	
+  	function howusers(){
+  		
+  		
+  	
+  		document.getElementById("users100").style.left="10px";
+  		document.getElementById("expandusers100").style.left="-100%";
+  		  		document.getElementById("expandusers101").style.left="15px";
+
+
+
+  			
+  		 	}
+  		 	
+  		 	
+  		 	function ideusers(){
+  		
+  		
+  	
+  		document.getElementById("users100").style.left="-100%";
+  		document.getElementById("expandusers100").style.left="15px";
+  		  		document.getElementById("expandusers101").style.left="-100%";
+
+
+  		
+
+  			
+  		 	}
+  	
+  </script>
   
     <div id="main-content-window-nem">
 	
@@ -219,7 +304,7 @@
 	   <hr  class="devider">
 	   <b  style="text-align:left;">Hobiji </b> Igranje igrica
 	   <hr  class="devider">
-	   <b  style="text-align:left;">Omiljena igrica </b> Slither
+	   <b  style="text-align:left;">Omiljena igrica </b> Slither.io
 	   <hr class="devider">
 	   
 	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
@@ -241,13 +326,13 @@
 	<div id="textautor">  <img src="./images/users/luka.jpg" id="avatar-plaintext"><p id="exp-title">Luka <b>Ratić</b></p><br/></div>
 	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
-	   <b  style="text-align:left;">Godiste </b> 2002.<br/>
+	   <b  style="text-align:left;">Godiste </b> 2003.<br/>
 	   <hr  class="devider">
 	   <b  style="text-align:left;">Godina u System Pro-u </b> 4.
 	   <hr  class="devider">
-	   <b  style="text-align:left;">Hobiji </b> Igranje igrica
+	   <b  style="text-align:left;">Hobiji </b> Fotografija i jos svasta nesto
 	   <hr  class="devider">
-	   <b  style="text-align:left;">Omiljena igrica </b> HalfLife
+	   <b  style="text-align:left;">Omiljena igrica </b> Infinite Simulator 2016.
 	   <hr class="devider">
 	   
 	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>

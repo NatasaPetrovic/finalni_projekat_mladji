@@ -5,17 +5,17 @@ body{
 }
 #headerimagebg{
 	
-	background-color:#336F81;
+	background-color:#0ab4b8;
 
     width:100%;
-	position:fixed;
+	position:absolute;
 	top:0px;
 	left:0px;
 	right:0px;
 	height:400px;
 	
 	box-shadow:5px -8px 35px #000000;
-	
+	transition:0.5s ease;
 	z-index:-100;
 	
 }
@@ -27,10 +27,14 @@ body{
 #main-content-window-nem{
 	
 	background-color:#ffffff;
-	width:1000px;
+	width:100%;
 	height:550px;
 	position:fixed;
-	left:440px;
+	left:0.0001px;
+	transition:1s ease;
+	
+	margin-left: auto;
+	margin-right:auto;
 	top:135px;
 		box-shadow:0px 5px 35px #323232;
 
@@ -66,10 +70,11 @@ body{
 .imgavfave{
 	
 	border-radius:100px;
-				box-shadow:0px 0px 25px #323232;
+				box-shadow:0px 5px 15px rgba(0, 0, 0, 0.5);
 
 	
 }
+
 
 #callfavourites{
 	
@@ -80,7 +85,7 @@ body{
 	height:48px;
 	border-radius:100px;
 	background-color:#ff0e7a;
-	box-shadow:0px 0px 25px #323232;
+	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);
 	left:125px;
 	
 }
@@ -532,10 +537,13 @@ border:0.5px dotted #028ad6;
 }
 
 .lala{
+	
 	border-radius:100px;
 	width:100px;
-	height:100px;
+	height:100px;	
+	
 }
+
 
 footer {
 	text-align: center;

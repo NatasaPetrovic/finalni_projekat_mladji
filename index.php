@@ -5,15 +5,23 @@ include "header.html"
 <title>U konstrukciji</title>
 <link rel="stylesheet" href="cssmain.css">
 </head>
-<body>
+<body    onscroll="hfull100()">
     <div class="container">
+        
+        <script>
+            function hfull100(){
+         
+            }
+        </script>
+        
+        
         <div class="jumbotron">
         <!--<img src="http://i.imgur.com/tlO3m6G.png" />
         <h2>Website je trenutno u konstrukciji, dodjite opet kasnije.</h2>-->
         <center>
 	<div>
-	<h1>O našem projektu</h1>
-	<p>
+	<h1  style="font-size:32px;">O našem projektu</h1>
+	<p style="font-size:16px;">
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</p>
 	</div>
@@ -21,7 +29,7 @@ include "header.html"
 	<!--<img src="http://www.footeducation.com/images/fpi/fpi-lateral.png" /> <h1>ER</h1
 	>-->
 	
-	<h1>Ko su članovi grupe</h1>
+	<h1 style="font-size:32px;">Ko su članovi grupe</h1>
     
 <br>    <div class="row">
         
@@ -158,7 +166,7 @@ include "header.html"
     </div>
     </div>
     <footer id="foteraja">
-        &copy; Copyright 2016, Created by our team. All rights reserveed.
+        &copy; Copyright 2016, Kreirano od strane našeg tima.
     </footer>
     </div>
 </body>
