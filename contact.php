@@ -32,7 +32,7 @@ include "header.html"
 	</div>
     </div>
     <footer id="foteraja">
-        &copy;copyright 2016 , Created by our team
+        &copy; Copyright 2016, Created by our team. All rights reserved.
     </footer>
     </div>
 </body>
