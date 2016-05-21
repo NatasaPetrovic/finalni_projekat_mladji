@@ -2,6 +2,86 @@
 <html>
 
   <head>
+  	
+  	
+  	<script>
+  		
+  	
+  		
+  	</script>
+  	
+  	<script>
+
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function proveriKolacic() {
+    var user=getCookie("username");
+     var mail=getCookie("email");
+    if (user != "") {
+       document.getElementById("NameUser").innerHTML = "Ime : " + user ; 
+       
+    } else {
+       user = prompt("Unesite vaše ime :","");
+       if (user != "" && user != null) {
+           setCookie("username", user, 30);
+       }
+    }
+    
+    
+    if (mail != "") {
+         document.getElementById("NameMail").innerHTML = "Email : " + mail ;
+       
+    } else {
+       mail = prompt("Unesite vaš email :","");
+       if (mail != "" && mail != null) {
+           setCookie("email", mail, 30);
+       }
+    }
+}
+
+
+
+function showinfouserua(){
+	
+	document.getElementById("help-drawer-right").style.right="0px";
+	
+		
+}
+function closeHelpUAmenu(){
+	
+	document.getElementById("help-drawer-right").style.right="-100%";
+
+		
+}
+
+</script>
+  	
+  	
+  	
+  	
+  	
+  	
+  	
   
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="cssmain.css">
@@ -19,8 +99,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
   </head>
-  <body>
-  	<nav class="navbar navbar-default">
+  <body style="overflow-y:scroll;" id="mainbodytag">
+  	 <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -37,9 +117,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
 
+            <li><a href="index.php">Home</a></li>
             <li><a href="sablon.html">Naš tim</a></li>
             <li><a href="projekti.php">Projekti</a></li>
-            
+            <li><a href="contact.php">Kontakt</a></li>
 
           
            
@@ -53,8 +134,9 @@
 <div id="rounder" >
   <header>
   
+  
      <div id="headerimagebg">
-	
+
 	
 	
 	 </div>
@@ -62,34 +144,471 @@
   </header>
   
   <body>
+  	
+  	
+  	<div id="Changelog">
+		
+		
+		<center>
+			
+			<div id="ChangeLogwindow" style="overflow-y:scroll;">
+				
+				<p id="desc-Chlog" style="text-align:left;height:auto;width:75%;">
+					
+					- Verzija 1.0<br/>
+					> Kreirana stranica i potrebni elementi<br/>
+					<br></br>
+					- Verzija 1.2<br/>
+					> Dopunjene informacije o učenicima i kreirana traka sa prečicama ka svakom od učenika.<br/>
+					<br></br>
+					- Verzija 2.0<br/>
+					
+					> Dodata funkcija traki sa učenicima<br/>
+					> Kreiran prozorčić za portfolio svakog od učenika.<br/>
+					> Kreirana stranica "kontakt.php"<br/>
+					<br></br>
+					- Verzija 3.0<br/>
+					> Poboljšan dizajn<br/>
+					> Dodana potpuna responzivnost<br/>
+					> Preuređen prozor za portfolio<br/>
+					> Dodate nove slike i opisi učenika<br/>
+					<br></br>
+					- Verzija 3.1<br/>
+					> Dodana slika na elementu za portfolio<br/>
+					> Poboljšani efekti<br/>
+					<br></br>
+					- Verzija 3.1.5<br/>
+					> Dodana traka za korisnika<br/>
+					> "Kolačići" pušteni u rad<br/>
+					> Sitne izmene<br/>
+					<br></br>
+					- Verzija 4<br/>
+					> Poboljšanje responzivnosti<br/>
+					<br></br>
+					
+				</p>
+				
+				<style>
+					
+					#closeChlogw{
+						top:-100%;position:fixed;
+						width:56px;
+						border:none;
+						height:56px;
+						border-radius:100px;
+							box-shadow:0px 5px 15px rgba(0, 0, 0, 0.3);
+background-color:#007D98;
+position:fixed;
+transition:0.3s ease;
+						right:56px;
+						
+						
+					}
+					
+				</style>
+				<button id="closeChlogw" onclick="closeLog()">
+					<img src="https://preview.c9users.io/lukaratic/systemproproj1/images/ico/Material%20Icons_e14c(0)_512.png?_c9_id=livepreview0&_c9_host=https://ide.c9.io" width="40px">
+					</button>
+			</div>
+			
+		</center>
+		
+	
+	</div>	
+  		<script>
+			
+			function closeLog(){
+			
+			document.getElementById("closeChlogw").style.top="-100%";
+						document.getElementById("Changelog").style.bottom="-100%";
+
+			}
+				function ChangeLogVisible(){
+						document.getElementById("closeChlogw").style.top="56px";
+
+			document.getElementById("Changelog").style.bottom="0px";
+			
+			}
+		</script>
+  	
+  	
+  	
+  	
+  <div id="menu-left">
+
+ <button id="expandusers100" onclick="howusers()"><img src="images/ico/Material Icons_e409(0)_512.png" width="38" id="imager29"></button><div id="users100">  <img src="./images/users/filip.jpg" id="faveavatar1" class="imgavfave" onclick="changeBgOnBtnClickSablonhtml()"> <img src="./images/users/nadja.jpg" id="faveavatar2" class="imgavfave"  onclick="changeBgOnBtnClickSablonhtml()"> <img src="./images/users/nikola.jpg" id="faveavatar3" class="imgavfave"  onclick="changeBgOnBtnClickSablonhtml()"> <img src="./images/users/mihajlo.jpg" id="faveavatar4" class="imgavfave" onclick="changeBgOnBtnClickSablonhtml()"> <img src="./images/users/lazar.jpg" id="faveavatar5" class="imgavfave"  onclick="changeBgOnBtnClickSablonhtml()"> <img src="./images/users/luka.jpg" id="faveavatar6" class="imgavfave" onclick="changeBgOnBtnClickSablonhtml()"> <img src="./images/users/aleksa.jpg" id="faveavatar7" class="imgavfave" onclick="changeBgOnBtnClickSablonhtml()"> <img src="./images/users/dusan.jpg" id="faveavatar8" class="imgavfave" onclick="changeBgOnBtnClickSablonhtml()"> <img src="./images/users/david.jpg" id="faveavatar9" class="imgavfave" onclick="changeBgOnBtnClickSablonhtml()"><img src="./images/users/sofija.jpg" id="faveavatar10" class="imgavfave" onclick="changeBgOnBtnClickSablonhtml()"> <img src="./images/users/vukr.jpg" id="faveavatar11" class="imgavfave" onclick="changeBgOnBtnClickSablonhtml()"> <img src="./images/users/vukvu.jpg" id="faveavatar12" class="imgavfave"  onclick="changeBgOnBtnClickSablonhtml()">  </div>
+ <button id="expandusers101" onclick="ideusers()"><img src="images/ico/Material Icons_e409(0)_512.png" width="38"  id="imager30" style="transform:rotate(180deg);"></button><div id="users100"> 
+
+
   
 
- <button id="expandusers100" onclick="howusers()"><img src="images/ico/Material Icons_e5cc(0)_512.png" width="38"></button><div id="users100">  <img src="./images/users/filip.jpg" id="faveavatar1" class="imgavfave"> <img src="./images/users/nadja.jpg" id="faveavatar2" class="imgavfave"> <img src="./images/users/nikola.jpg" id="faveavatar3" class="imgavfave"> <img src="./images/users/mihajlo.jpg" id="faveavatar4" class="imgavfave"> <img src="./images/users/lazar.jpg" id="faveavatar5" class="imgavfave"> <img src="./images/users/luka.jpg" id="faveavatar6" class="imgavfave"> <img src="./images/users/aleksa.jpg" id="faveavatar7" class="imgavfave"> <img src="./images/users/dusan.jpg" id="faveavatar8" class="imgavfave"> <img src="./images/users/David.JPG" id="faveavatar9" class="imgavfave"><img src="./images/users/sofija.jpg" id="faveavatar10" class="imgavfave"> <img src="./images/users/vukr.jpg" id="faveavatar11" class="imgavfave"> <img src="./images/users/vukvu.jpg" id="faveavatar12" class="imgavfave"> </div>
- <button id="expandusers101" onclick="ideusers()"><img src="images/ico/Material Icons_e5cc(0)_512.png" width="38" style="transform:rotate(180deg);"></button><div id="users100"> 
-  <style>
+
+</div>
+
+<img src="/images/ico/Material%20Icons_e87c(6)_256.png" id="UserAvatar1"  onclick="showinfouserua();proveriKolacic()" class="imgavfavse"> 
+
+
+<div id="help-drawer-right">
+	<div id="banner_user">
+	<button id="closeHelpUAmenu" onclick="closeHelpUAmenu()"><img src="https://preview.c9users.io/lukaratic/systemproproj1/images/ico/Material%20Icons_e5c4(0)_256.png?_c9_id=livepreview0&_c9_host=https://ide.c9.io" width="42" style="transform:rotate(180deg);">Zatvori</button></div>
+	<br></br>
+	<p id="NameUser">Ime nije uneto</p>
+	<p id="NameMail">Email adresa nije uneta</p>
+	
+
+	
+	<div id="meniuseropcije">
+
+		<button id="menuuserkontaktbtn2chl" onclick="ChangeLogVisible()">Change Log</button><br/>
+	<a href="https://systemproproj1-lukaratic.c9users.io/contact.php">	<button id="menuuserkontaktbtn1">Kontakt</button></a>
+	<a href="https://systemproproj1-lukaratic.c9users.io/projekti.php">	<button id="menuuserkontaktbtn2">Projekti</button></a>
+	<a href="https://systemproproj1-lukaratic.c9users.io/sablon.html">	<button id="menuuserkontaktbtn1">Naš tim</button></a>
+	<a href="https://systemproproj1-lukaratic.c9users.io/index.php">			<button id="menuuserkontaktbtn2">Home</button></a>
+
+
+		
+	</div>
+	
+	
+	
+	
+	<style>
+	#ChangeLogwindow{
+		
+		width:75%;
+		height:75%;
+		background-color:#ffffff;
+		border-radius:3px;
+			box-shadow:0px 5px 15px rgba(0, 0, 0, 0.3);
+
+		
+	}
+	#Changelog{
+background-color:rgba(0, 125, 152, 0.3);
+height:100%;
+width:100%;
+position:fixed;
+left:0px;
+right:0px;
+
+bottom:-100%;
+z-index:9999999999;
+transition:0.3s ease;
+		
+	}
+#changeLogActivator{
+	margin-top:25px;
+		width:75%;
+	height:25px;
+	border-radius:3px;
+	border:none;
+	background-image:url("http://belgradecat.com/wp-content/uploads/2015/04/IMG_3156.jpg");
+	color:#ffffff;
+	
+	box-shadow:0px 5px 15px rgba(0, 0, 0, 0.3);
+		transition:0.2s ease;
+	position:relative;
+	margin-bottom:0px;
+	
+}
+	
+	
+	
+		#banner_user{
+			background-image:url("http://belgradecat.com/wp-content/uploads/2015/04/IMG_3156.jpg");
+			width:100%;
+			height:200px;
+			background-size:100% 100%;
+			
+			
+		}
+		#NameUser{
+			
+			font-size:16px;
+padding-left:20px;			
+		}
+		#NameMail{
+			
+			font-size:16px;
+padding-left:20px;
+			
+		}
+		
+		#meniuseropcije{
+			
+			width:100%;
+			height:115px;
+			position:fixed;
+			bottom:0px;
+			background-color:rgba(0, 0, 0, 0.1);
+			padding:25px;
+			
+		}
+#menuuserkontaktbtn1{
+	
+	width:auto;
+	height:25px;
+	border-radius:3px;
+	border:none;
+	background-image:url("http://belgradecat.com/wp-content/uploads/2015/04/IMG_3156.jpg");
+	color:#ffffff;
+	
+	box-shadow:0px 5px 15px rgba(0, 0, 0, 0.3);
+		transition:0.2s ease;
+
+}
+
+#menuuserkontaktbtn2{
+	
+	width:auto;
+	height:25px;
+	border-radius:3px;
+	border:none;
+	background-image:url("http://belgradecat.com/wp-content/uploads/2015/04/IMG_3156.jpg");
+	
+	color:#ffffff;
+	
+	box-shadow:0px 5px 15px rgba(0, 0, 0, 0.3);
+	transition:0.2s ease;
+}
+#menuuserkontaktbtn2chl{
+	
+	width:auto;
+	height:25px;
+	margin-bottom:15px;
+	border-radius:3px;
+	border:none;
+	background-image:url("http://belgradecat.com/wp-content/uploads/2015/04/IMG_3156.jpg");
+	
+	color:#ffffff;
+	
+	box-shadow:0px 5px 15px rgba(0, 0, 0, 0.3);
+	transition:0.2s ease;
+}
+
+
+#menuuserkontaktbtn1:active{
+	
+	
+	height:25px;
+	border-radius:3px;
+	border:none;
+	background-image:url("http://belgradecat.com/wp-content/uploads/2015/04/IMG_3156.jpg");
+	color:#ffffff;
+	
+	box-shadow:0px 7px 15px rgba(0, 0, 0, 0.4);
+	
+}
+
+#menuuserkontaktbtn2:active{
+	
+
+	height:25px;
+	border-radius:3px;
+	border:none;
+	background-image:url("http://belgradecat.com/wp-content/uploads/2015/04/IMG_3156.jpg");
+	
+	color:#ffffff;
+	
+	box-shadow:0px 7px 15px rgba(0, 0, 0, 0.4);
+	
+}
+
+	</style>
+</div>
+
+<center>
+
+</center>
+
+<style>
+#closeBubble{
+	
+	width:auto;
+	text-align:right;
+	height:30px;
+	background-color:#ffffff;
+	
+	border:none;
+	cursor:pointer;
+
+	
+}
+#closeBubble:hover{
+	
+			  		  		
+
+	
+}
+
+
+	#hovernamedisp-mid{
+	opacity:0.8;	
+		width:250px;
+		height:100px;
+		background-color:#ffffff;
+	
+		padding:30px;
+		transition:0.3s ease;
+		visibility:hidden;
+		  		  			box-shadow:0px 0px 20px rgba(0, 0, 0, 0.3);
+border-radius:5px;
+	}
+		#hovernamedisp-mid:hover{
+			
+			opacity:1;
+			
+		}
+	
+	#hdnmmid-nameholder{
+		
+		font-size:20px;
+		
+	}
+	
+</style>
+
+
+
+<script  type="text/javascript">
+	
+	$('#faveavatar1').hover(function(){
+    $('#hdnmmid-nameholder').text("Filip Škembarević");
+    
+    $("#hovernamedisp-mid").css('visibility','visible');
+});
+
+	$('#faveavatar2').hover(function(){
+    $('#hdnmmid-nameholder').text("Nađa Živković");
+    $("#hovernamedisp-mid").css('visibility','visible');
+});
+
+	$('#faveavatar3').hover(function(){
+    $('#hdnmmid-nameholder').text("Nikola Ignjatović");
+    $("#hovernamedisp-mid").css('visibility','visible');
+});
+
+	$('#faveavatar4').hover(function(){
+    $('#hdnmmid-nameholder').text("Mihailo Trumić");
+    $("#hovernamedisp-mid").css('visibility','visible');
+});
+
+	$('#faveavatar5').hover(function(){
+    $('#hdnmmid-nameholder').text("Lazar Ilić");
+    $("#hovernamedisp-mid").css('visibility','visible');
+});
+
+	$('#faveavatar6').hover(function(){
+    $('#hdnmmid-nameholder').text("Luka Ratić");
+    $("#hovernamedisp-mid").css('visibility','visible');
+});
+
+	$('#faveavatar7').hover(function(){
+    $('#hdnmmid-nameholder').text("Aleksa Bijelić");
+    $("#hovernamedisp-mid").css('visibility','visible');
+});
+
+	$('#faveavatar8').hover(function(){
+    $('#hdnmmid-nameholder').text("Dušan Mijatović");
+    $("#hovernamedisp-mid").css('visibility','visible');
+});
+
+	$('#faveavatar9').hover(function(){
+    $('#hdnmmid-nameholder').text("David Đumić");
+    $("#hovernamedisp-mid").css('visibility','visible');
+});
+
+	$('#faveavatar10').hover(function(){
+    $('#hdnmmid-nameholder').text("Sofija Ilić");
+    $("#hovernamedisp-mid").css('visibility','visible');
+});
+
+	$('#faveavatar11').hover(function(){
+    $('#hdnmmid-nameholder').text("Vuk Raković");
+    $("#hovernamedisp-mid").css('visibility','visible');
+});
+
+	$('#faveavatar12').hover(function(){
+    $('#hdnmmid-nameholder').text("Vuk Vulević");
+    $("#hovernamedisp-mid").css('visibility','visible');
+});
+
+
+
+
+	
+</script>
+
+
+
+
+
+  <script>
   	
+  	
+  	function changeBgOnBtnClickSablonhtml(){
+  		
+  		document.getElementById("main-content-window-nem").style.backgroundImage="none";
+  		  		document.getElementById("main-content-window-nem").style.height="auto";
+  		  		  		  		document.getElementById("main-content-window-nem").style.marginBottom="none";
+  		  		  		  		
+  		  		  		  		
+  		  		  		  		document.getElementById("main-content-window-nem").style.borderRadius="5px 5px 5px 5px";
+
+
+  	}
+  		
+  		
+
+  </script>
+  
+  <script>
+  	function closeBubble(){
+  		
+	
+	document.getElementById("hovernamedisp-mid").style.visibility="hidden";
+	
+}  	
+  	
+  </script>
+   <style>
+  
+  	#menu-left{
+  		
+  		z-index:99999999;
+  		
+  	}
   	#expandusers100{
   		
   		position:fixed;
   		top:72px;
-  		left:15px;
+  		left:20px;
+  		opacity:0.5;
   		border-radius:100px;
   		width:48px;
   		height:48px;
   		border:none;
-  		background-color:#089093;
+  			background-image: url('https://preview.c9users.io/lukaratic/systemproproj1/Simple-Irregular-Shapes-Background-Vector-01.jpg?_c9_id=livepreview1&_c9_host=https://ide.c9.io');
+
+  		margin-right:10px;
 	cursor:pointer;
   		transition:1s ease;
+  		  			box-shadow:0px 5px 10px rgba(0, 0, 0, 0.4);
+
   	}
+  #expandusers100:hover{
+  	
+  	opacity:1;
+  }
   
   	#expandusers100:active{
-  		
+  			opacity:1;
   		box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.75);
 
   		
   	}
   		#expandusers101:active{
-  		
+  			opacity:0.9;
   		box-shadow: inset 0px 0px 29px -12px rgba(0,0,0,0.75);
 
   		
@@ -99,22 +618,43 @@
   		position:fixed;
   		left:-100%;
   		top:0px;
+  		height:100%;
+background-color:#F1F1F1;
+width:95px;
+  	  z-index:999999999;
+  	  margin-right:20px;
+  	    		box-shadow:0px 0px 25px rgba(0,0,0,0.75);
+
+ overflow-y: scroll;
+
   		transition:1s ease;
   		
   		cursor:pointer;
+  	}
+  	#users100:hover{
+  		    opacity: 1;
+  		    
+  		   
+
+  		
   	}
   	
   	#expandusers101{
 	cursor:pointer;
   		position:fixed;
   		top:72px;
+  		margin-left:10px;
   		left:-100%;
   		border-radius:100px;
   		width:48px;
   		height:48px;
   		border:none;
-  		background-color:#089093;
+  			background-image: url('https://preview.c9users.io/lukaratic/systemproproj1/Simple-Irregular-Shapes-Background-Vector-01.jpg?_c9_id=livepreview1&_c9_host=https://ide.c9.io');
+	opacity:0.5;
   		transition:1s ease;
+  			box-shadow:0px 5px 10px rgba(0, 0, 0, 0.4);
+
+  		z-index:999999999;
   	}
   </style>
   
@@ -125,9 +665,14 @@
   		
   		
   	
-  		document.getElementById("users100").style.left="10px";
+  		document.getElementById("users100").style.left="0px";
   		document.getElementById("expandusers100").style.left="-100%";
-  		  		document.getElementById("expandusers101").style.left="15px";
+  			document.getElementById("imager29").style.transform="rotate(360deg)";
+  			  			
+
+  		  		document.getElementById("expandusers101").style.left="92px";
+  		  		document.body.style.position="relative";
+  		  		
 
 
 
@@ -140,7 +685,7 @@
   		
   	
   		document.getElementById("users100").style.left="-100%";
-  		document.getElementById("expandusers100").style.left="15px";
+  		document.getElementById("expandusers100").style.left="10px";
   		  		document.getElementById("expandusers101").style.left="-100%";
 
 
@@ -150,8 +695,10 @@
   		 	}
   	
   </script>
+  <center>
   
-    <div id="main-content-window-nem">
+  
+    <div id="main-content-window-nem" style="text-align:left;">
 	
 	
 	
@@ -160,7 +707,7 @@
 	  
 	   
 	<div id="textautor">  <img src="./images/users/filip.jpg" id="avatar-plaintext"><p id="exp-title">Filip <b>Škembarević</b></p><br/></div>
-	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
+	   
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
 	   <b  style="text-align:left;">Godiste </b> 2002.<br/>
 	   <hr  class="devider">
@@ -171,8 +718,8 @@
 	   <b  style="text-align:left;">Omiljena igrica </b> HalfLife
 	   <hr class="devider">
 	   
-	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
-	Dosta je pametan al njegovo fizicko stanje je problem , za razliku od Luke on  pravi programe i dosta su dobri. Ali, veome je cudan.
+	 <b  style="text-align:left;overflow-y: scroll;"> O Njemu/njoj </b><br/>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	   </p>
 	  
 	   </div>
@@ -189,7 +736,6 @@
 	  
 	   
 	<div id="textautor">  <img src="./images/users/nadja.jpg" id="avatar-plaintext"><p id="exp-title">Nadja <b>Živković</b></p><br/></div>
-	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
 	   <b  style="text-align:left;">Godiste </b> 2002.<br/>
 	   <hr  class="devider">
@@ -200,8 +746,8 @@
 	   <b  style="text-align:left;">Omiljena igrica </b> Grand Theft Auto
 	   <hr class="devider">
 	   
-	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
-	 Ona pokusa da bude diva svega , idi u matematicku gimnaziju , omiljene pesme na zurci su od bethovena i mozart-a.
+	 <b  style="text-align:left;overflow-y: scroll;"> O Njemu/njoj </b><br/>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	   </p>
 	  
 	   </div>
@@ -217,7 +763,6 @@
 	  
 	   
 	<div id="textautor">  <img src="./images/users/nikola.jpg" id="avatar-plaintext"><p id="exp-title">Nikola <b>Ignjatović</b></p><br/></div>
-	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
 	   <b  style="text-align:left;">Godiste </b> 2002.<br/>
 	   <hr  class="devider">
@@ -228,8 +773,8 @@
 	   <b  style="text-align:left;">Omiljena igrica </b> Rainbow Six Siege
 	   <hr class="devider">
 	   
-	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
-	mMrzi Mihajla zato sto je mnogo vise kul od njega , bas je nizak
+	 <b  style="text-align:left;overflow-y: scroll;"> O Njemu/njoj </b><br/>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	   </p>
 	  
 	   </div>
@@ -245,7 +790,6 @@
 	  
 	   
 	<div id="textautor">  <img src="./images/users/mihajlo.jpg" id="avatar-plaintext"><p id="exp-title">Mihajlo <b>Trumić</b></p><br/></div>
-	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
 	   <b  style="text-align:left;">Godiste </b> 2001.<br/>
 	   <hr  class="devider">
@@ -256,8 +800,8 @@
 	   <b  style="text-align:left;">Omiljena igrica </b> NBA
 	   <hr class="devider">
 	   
-	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
-	Mnogo je kul . Tracevi govore da ide u teratanu , ili dasve to postize napolju . Nevertovatam genije i ima dobar friz.
+	 <b  style="text-align:left;overflow-y: scroll;"> O Njemu/njoj </b><br/>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	   </p>
 	  
 	   </div>
@@ -273,7 +817,6 @@
 	  
 	   
 	<div id="textautor">  <img src="./images/users/lazar.jpg" id="avatar-plaintext"><p id="exp-title">Lazar <b>Ilić</b></p><br/></div>
-	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
 	   <b  style="text-align:left;">Godiste </b> 2002.<br/>
 	   <hr  class="devider">
@@ -284,7 +827,7 @@
 	   <b  style="text-align:left;">Omiljena igrica </b> Slither.io
 	   <hr class="devider">
 	   
-	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
+	 <b  style="text-align:left;overflow-y: scroll;"> O Njemu/njoj </b><br/>
 	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	   </p>
 	  
@@ -301,7 +844,6 @@
 	  
 	   
 	<div id="textautor">  <img src="./images/users/luka.jpg" id="avatar-plaintext"><p id="exp-title">Luka <b>Ratić</b></p><br/></div>
-	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
 	   <b  style="text-align:left;">Godiste </b> 2003.<br/>
 	   <hr  class="devider">
@@ -312,8 +854,8 @@
 	   <b  style="text-align:left;">Omiljena igrica </b> Infinite Simulator 2016.
 	   <hr class="devider">
 	   
-	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
-	Njegov zivot je skidanje programa sa interneta i zvanje aerodroma da kupi karte za Ameriku , mada se sve uvek sjebe sa njegovim letom u poslednjem trenutku.
+	 <b  style="text-align:left;overflow-y: scroll;"> O Njemu/njoj </b><br/>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	   </p>
 	  
 	   </div>
@@ -329,7 +871,6 @@
 	  
 	   
 	<div id="textautor">  <img src="./images/users/aleksa.jpg" id="avatar-plaintext"><p id="exp-title">Aleksa <b>Bjelić</b></p><br/></div>
-	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
 	   <b  style="text-align:left;">Godiste </b> 2002.<br/>
 	   <hr  class="devider">
@@ -340,8 +881,8 @@
 	   <b  style="text-align:left;">Omiljena igrica </b> Fifa 16
 	   <hr class="devider">
 	   
-	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
-	 On trenira fudbal u OFK Beogradu , prica da dobro igra ali ga nikad nismo videli u akciji . Pored toga je glup ali uvek nadje nacin da vara na testu.
+	 <b  style="text-align:left;overflow-y: scroll;"> O Njemu/njoj </b><br/>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	   </p>
 	  
 	   </div>
@@ -357,7 +898,6 @@
 	  
 	   
 	<div id="textautor">  <img src="./images/users/dusan.jpg" id="avatar-plaintext"><p id="exp-title">Dusan <b>Mijatović</b></p><br/></div>
-	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
 	   <b  style="text-align:left;">Godiste </b> 2002.<br/>
 	   <hr  class="devider">
@@ -368,8 +908,8 @@
 	   <b  style="text-align:left;">Omiljena igrica </b> Sah
 	   <hr class="devider">
 	   
-	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
-	 Njegov nadimak je "Dusan Silni". Trenira sah i, priznaje , to je dosta tezak i zahtevan sport . Nije nikakav genije ali nije glup , mada ide na sah.
+	 <b  style="text-align:left;overflow-y: scroll;"> O Njemu/njoj </b><br/>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	   </p>
 	  
 	   </div>
@@ -384,8 +924,7 @@
 	   
 	  
 	   
-	<div id="textautor">  <img src="./images/users/David.JPG" id="avatar-plaintext"><p id="exp-title">David <b>Đumić</b></p><br/></div>
-	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
+	<div id="textautor">  <img src="./images/users/david.jpg" id="avatar-plaintext"><p id="exp-title">David <b>Đumić</b></p><br/></div>
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
 	   <b  style="text-align:left;">Godiste </b> 2002.<br/>
 	   <hr  class="devider">
@@ -396,8 +935,8 @@
 	   <b  style="text-align:left;">Omiljena igrica </b> Stavi sta hoces
 	   <hr class="devider">
 	   
-	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
-	 David je bio u razredu kao Mihajlo sa njegovim godistem , ali su se obje prebacili jer termin nije odgovarao . On sada sedi u svom cosku i gleda 9gag , i ne voli nikoga , i zna latinski.
+	 <b  style="text-align:left;overflow-y: scroll;"> O Njemu/njoj </b><br/>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	   </p>
 	  
 	   </div>
@@ -412,7 +951,6 @@
 	  
 	   
 	<div id="textautor">  <img src="./images/users/sofija.jpg" id="avatar-plaintext"><p id="exp-title">Sofija <b>Ilić</b></p><br/></div>
-	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
 	   <b  style="text-align:left;">Godiste </b> 2002.<br/>
 	   <hr  class="devider">
@@ -423,8 +961,8 @@
 	   <b  style="text-align:left;">Omiljena igrica </b> Nema
 	   <hr class="devider">
 	   
-	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
-	 Ona je dobar ucenik ali nikakav genije . Trenira folklor i stidljiva je prema ostatku razreda . Siugrni smo da plese kao pravi pro
+	 <b  style="text-align:left;overflow-y: scroll;"> O Njemu/njoj </b><br/>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	   </p>
 	  
 	   </div>
@@ -440,7 +978,6 @@
 	  
 	   
 	<div id="textautor">  <img src="./images/users/vukr.jpg" id="avatar-plaintext"><p id="exp-title">Vuk <b>Raković</b></p><br/></div>
-	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
 	   <b  style="text-align:left;">Godiste </b> 2002.<br/>
 	   <hr  class="devider">
@@ -451,8 +988,8 @@
 	   <b  style="text-align:left;">Omiljena igrica </b> YU-GI-OH
 	   <hr class="devider">
 	   
-	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
-	 Ovaj lik dolazi na casove da bi gledao vide-e na jutubu i igra colash royale . Mislim vec imate neku njegovu sliku kad kaze da mu je omiljena igrica YU-GI-OH.
+	 <b  style="text-align:left;overflow-y: scroll;"> O Njemu/njoj </b><br/>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	   </p>
 	  
 	   </div>
@@ -468,7 +1005,6 @@
 	  
 	   
 	<div id="textautor">  <img src="./images/users/vukvu.jpg" id="avatar-plaintext"><p id="exp-title">Vuk <b>Vulević</b></p><br/></div>
-	    <div id="actions"><button id="faveit"><img src="./images/ico/Material Icons_e87d(0)_128.png" width="24px"></button> <button id="mailme"><img src="./images/ico/Material Icons_e159(0)_128.png" width="24px"></button></div>
 	 <br/> <p  id="exp-plaintext" style="text-align:left;">
 	   <b  style="text-align:left;">Godiste </b> 2002.<br/>
 	   <hr  class="devider">
@@ -479,8 +1015,8 @@
 	   <b  style="text-align:left;">Omiljena igrica </b> Grand Theft Auto
 	   <hr class="devider">
 	   
-	 <b  style="text-align:left;"> O Njemu/njoj </b><br/>
-	 On je veoma glup . Svaki test ponavlja barem dva puta i ako uskurom ne uspe da uradi ovaj jedan , morace da ponavlja . Kao trenira kosarku.
+	 <b  style="text-align:left;overflow-y: scroll;"> O Njemu/njoj </b><br/>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	   </p>
 	  
 	   </div>
@@ -492,7 +1028,7 @@
 	
 	
 	
-	</div>
+	</div></center>
 	
 	
 	<div id="menu" >
@@ -518,5 +1054,4 @@
 	
 
   </body>
-  
-</html>
+  </html>

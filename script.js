@@ -7,3 +7,5 @@ $(document).ready(function() {
        $(".clanovi[value=" + $clan + "]").show();
     });
 })
+
+

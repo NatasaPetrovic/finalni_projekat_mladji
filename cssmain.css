@@ -1,18 +1,37 @@
 body{
-	
+	transition: 0.3s ease;
 	background-color:#f4f4f4;
 	
 }
-#headerimagebg{
+.staradi{
+	text-shadow: 0px 2.5px 10px rgba(0, 0, 0, 0.3);
 	
-	background-color:#0ab4b8;
+	transition:0.5s ease ;
+	text-decoration: underline;	
+}
+
+.ime{
+	
+	text-shadow: 0px 2.5px 10px rgba(0, 0, 0, 0.3);
+	transition:1s ease ;
+	
+}
+.ime:hover{
+	
+	text-decoration: underline;
+	
+}
+
+#headerimagebg{
+	background-image: url('https://preview.c9users.io/lukaratic/systemproproj1/Simple-Irregular-Shapes-Background-Vector-01.jpg?_c9_id=livepreview1&_c9_host=https://ide.c9.io');
+opacity: 0.3;
 
     width:100%;
 	position:absolute;
 	top:0px;
 	left:0px;
 	right:0px;
-	height:400px;
+	height:500px;
 	
 	box-shadow:5px -8px 35px #000000;
 	transition:0.5s ease;
@@ -21,22 +40,31 @@ body{
 }
 
 .jumbotron{
-	box-shadow: 0px -8px 35px #000000;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+	background-color: #ffffff;
 	height:100%;
+	margin-top:20px;
 }
 #main-content-window-nem{
 	
-	background-color:#ffffff;
-	width:100%;
-	height:550px;
-	position:fixed;
-	left:0.0001px;
-	transition:1s ease;
 	
-	margin-left: auto;
-	margin-right:auto;
-	top:135px;
-		box-shadow:0px 5px 35px #323232;
+background-image:url("download.png");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+	background-color:#ffffff;
+	width:75%;
+	height:700px;
+	position:relative;
+	padding-top: 20px;
+	padding-bottom:20px;
+
+	transition:1s ease;
+	z-index:-99 ;
+    
+
+	top:-40px;
+	margin-bottom:50px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 
 	border-radius:5px 5px 5px 5px;
 	
@@ -44,12 +72,14 @@ body{
 	
 }
 #avatar-plaintext{
-	height: 64px;
-	width:64px;	
+	height: 128px;
+	width:128px;	
 	border-radius:100px;
-	
-			box-shadow:0px 0px 15px #323232;
-
+	position: relative;
+	top:20px;
+	left:20px;
+			box-shadow:0px 8px 15px rgba(0, 0, 0, 0.3);
+overflow-y: scroll;
 	
 }
 #plain-text{
@@ -63,18 +93,33 @@ body{
 	
 }
 #exp-title{
+	position: relative;
+	top:-68px;
+	margin-left:188px;
+	font-size:48px;
+	transition: 0.3s ease;
 	
-	font-size:30px;
+}
+#exp-title:hover{
+	
+	color:gray;
 	
 }
 .imgavfave{
+	
+	border-radius:100px;
+				box-shadow:0px 5px 15px rgba(0, 0, 0, 0.3);
+
+	
+}
+
+.imgavfavse{
 	
 	border-radius:100px;
 				box-shadow:0px 5px 15px rgba(0, 0, 0, 0.5);
 
 	
 }
-
 
 #callfavourites{
 	
@@ -95,10 +140,11 @@ body{
 }
 #faveavatar1{
 	
-	position:absolute;
-	left:450px;
-	margin-right:15px;
-	top:70px;
+		position:relative;
+	margin-left:10px;
+	margin-right:0px;
+	margin-bottom: 10px;
+	top:20px;
 	
 	width:48px;
 	height:48px;
@@ -109,16 +155,19 @@ body{
 
 #faveavatar1:hover{
 	
-	top:60px;
+	width:56px;
+	height:56px;
 	transition: all 0.2s ease;
-	
 }
+
+	
 #faveavatar2{
 	
-	position:absolute;
-	left:510px;
-	margin-right:15px;
-	top:70px;
+	position:relative;
+	margin-left:10px;
+	margin-right:0px;
+		margin-bottom: 10px;
+	top:20px;
 	
 	width:48px;
 	height:48px;
@@ -129,17 +178,19 @@ body{
 
 #faveavatar2:hover{
 	
-	top:60px;
+	width:56px;
+	height:56px;
 	transition: all 0.2s ease;
 	
 }
 
 #faveavatar3{
 	
-	position:absolute;
-	left:570px;
-	margin-right:15px;
-	top:70px;
+	position:relative;
+	margin-left:10px;
+	margin-right:0px;
+		margin-bottom: 10px;
+	top:20px;
 	
 	width:48px;
 	height:48px;
@@ -150,16 +201,18 @@ body{
 
 #faveavatar3:hover{
 	
-	top:60px;
+		width:56px;
+	height:56px;
 	transition: all 0.2s ease;
 	
 }
 #faveavatar4{
 	
-	position:absolute;
-	left:630px;
-	margin-right:15px;
-	top:70px;
+	position:relative;
+	margin-left:10px;
+	margin-right:0px;
+		margin-bottom: 10px;
+	top:20px;
 	
 	width:48px;
 	height:48px;
@@ -169,17 +222,18 @@ body{
 }
 
 #faveavatar4:hover{
-	
-	top:60px;
+	width:56px;
+	height:56px;
 	transition: all 0.2s ease;
 	
 }
 #faveavatar5{
 	
-	position:absolute;
-	left:690px;
-	margin-right:15px;
-	top:70px;
+		position:relative;
+	margin-left:10px;
+	margin-right:0px;
+		margin-bottom: 10px;
+	top:20px;
 	
 	width:48px;
 	height:48px;
@@ -190,17 +244,19 @@ body{
 
 #faveavatar5:hover{
 	
-	top:60px;
+	width:56px;
+	height:56px;
 	transition: all 0.2s ease;
 	
 }
 
 #faveavatar6{
 	
-	position:absolute;
-	left:750px;
-	margin-right:15px;
-	top:70px;
+	position:relative;
+	margin-left:10px;
+	margin-right:0px;
+		margin-bottom: 10px;
+	top:20px;
 	
 	width:48px;
 	height:48px;
@@ -210,17 +266,17 @@ body{
 }
 
 #faveavatar6:hover{
-	
-	top:60px;
+	width:56px;
+	height:56px;
 	transition: all 0.2s ease;
 	
 }
 #faveavatar7{
-	
-	position:absolute;
-	left:810px;
-	margin-right:15px;
-	top:70px;
+	position:relative;
+	margin-left:10px;
+	margin-right:0px;
+		margin-bottom: 10px;
+	top:20px;
 	
 	width:48px;
 	height:48px;
@@ -230,17 +286,18 @@ body{
 }
 
 #faveavatar7:hover{
-	
-	top:60px;
+	width:56px;
+	height:56px;
 	transition: all 0.2s ease;
 	
 }
 #faveavatar8{
 	
-	position:absolute;
-	left:870px;
-	margin-right:15px;
-	top:70px;
+	position:relative;
+	margin-left:10px;
+	margin-right:0px;
+		margin-bottom: 10px;
+	top:20px;
 	
 	width:48px;
 	height:48px;
@@ -250,18 +307,17 @@ body{
 }
 
 #faveavatar8:hover{
-	
-	top:60px;
+	width:56px;
+	height:56px;
 	transition: all 0.2s ease;
-	
 }
 
 #faveavatar9{
-	
-	position:absolute;
-	left:930px;
-	margin-right:15px;
-	top:70px;
+	position:relative;
+	margin-left:10px;
+	margin-right:0px;
+		margin-bottom: 10px;
+	top:20px;
 	
 	width:48px;
 	height:48px;
@@ -271,17 +327,18 @@ body{
 }
 
 #faveavatar9:hover{
-	
-	top:60px;
+	width:56px;
+	height:56px;
 	transition: all 0.2s ease;
 	
 }
 #faveavatar10{
 	
-	position:absolute;
-	left:990px;
-	margin-right:15px;
-	top:70px;
+	position:relative;
+	margin-left:10px;
+	margin-right:0px;
+		margin-bottom: 10px;
+	top:20px;
 	
 	width:48px;
 	height:48px;
@@ -291,17 +348,18 @@ body{
 }
 
 #faveavatar10:hover{
-	
-	top:60px;
+	width:56px;
+	height:56px;
 	transition: all 0.2s ease;
 	
 }
 #faveavatar11{
 	
-	position:absolute;
-	left:1050px;
-	margin-right:15px;
-	top:70px;
+	position:relative;
+	margin-left:10px;
+	margin-right:0px;
+		margin-bottom: 10px;
+	top:20px;
 	
 	width:48px;
 	height:48px;
@@ -311,18 +369,18 @@ body{
 }
 
 #faveavatar11:hover{
-	
-	top:60px;
+	width:56px;
+	height:56px;
 	transition: all 0.2s ease;
 	
 }
 
 #faveavatar12{
-	
-	position:absolute;
-	left:1110px;
-	margin-right:15px;
-	top:70px;
+	position:relative;
+	margin-left:10px;
+	margin-right:0px;
+		margin-bottom: 10px;
+	top:20px;
 	
 	width:48px;
 	height:48px;
@@ -332,11 +390,75 @@ body{
 }
 
 #faveavatar12:hover{
-	
-	top:60px;
+	width:56px;
+	height:56px;
 	transition: all 0.2s ease;
 	
 }
+
+
+#UserAvatar1{
+	position:fixed;
+	right:56px;
+	bottom:56px;
+	background-color:#0098b8;
+
+	width:56px;
+	height:56px;
+		cursor:pointer;
+			
+				border:none;
+
+}
+#notifier_UA1{
+color:#ffffff;
+font-size:12px;
+padding-left:4px;
+padding-top: 0px;
+	width:16px;
+	height: 16px;
+	border-radius:100px;
+	background-color: red;
+	position:fixed;
+	right:52px;
+	bottom:90px;
+	cursor:pointer;
+	transition: 0.2s ease;
+}
+
+#UserAvatar1:hover{
+
+	transition: all 0.2s ease;
+	
+}
+#help-drawer-right{
+	position:fixed;
+	height:100%;
+	width:300px;
+	background-color: #ffffff;
+	right:-100%;
+	top:0px;
+	bottom:0px;
+	z-index:9999999999;
+	transition:0.3s ease ;
+		box-shadow:5px 0px 25px rgba(0, 0, 0, 0.5);
+
+}
+#closeHelpUAmenu{
+	
+	width:100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	height:45px;
+	padding-left:7px;
+		
+	padding-top:2px;
+color:#ffffff;
+	border:none;
+	text-align: left;
+}
+
+
+
 #faveit{
 	
 border:none;
@@ -388,8 +510,7 @@ width:40px;
 	position:fixed;
 	bottom:75px;
 	right:75px;
-	
-	width:64px;
+	margin-right: 10px;	width:64px;
 	height:64px;
 	
 	background-color:#028ad6;
@@ -531,20 +652,25 @@ position:fixed;
 }
 .devider{
 
-color:#028ad6;
-border:0.5px dotted #028ad6;
+border:0.2px dotted gray;
+
 
 }
+
 
 .lala{
 	
 	border-radius:100px;
 	width:100px;
 	height:100px;	
-	
+		box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.4);
+
 }
 
+.lala:hover{
 
+
+}
 footer {
 	text-align: center;
 	background-color: #e5e5e5;
@@ -554,24 +680,89 @@ footer {
     #main-content-window-nem{
 	
 	background-color:#ffffff;
-	width:1000px;
-	height:550px;
+	width:100%;
+	height:100%;
 	position:fixed;
-	left:100px;
-	top:125px;
-		box-shadow:0px 5px 35px #323232;
+	margin-left:0px;
+	margin-right:0px;
+ box-shadow:none;
 
+	
+	top:95px;
 	border-radius:5px 5px 5px 5px;
 	
 	
 	
 }
+#avatar-plaintext{
+	height: 128px;
+	width:128px;	
+	border-radius:5px;
+	position: relative;
+	top:-10px;
+	left:0px;
+			box-shadow:0px 7px 15px rgba(0, 0, 0, 0.5);
+
+	
+}
+#headerimagebg{
+	
+	background-color:#ffffff;
+background-image: none;
+    width:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:400px;
+	
+
+	transition:0.5s ease;
+	z-index:-100;
+	
+}
+
+#exp-title{
+	position: relative;
+	margin-left:0px;
+	margin-top:126px;
+	font-size:38px;
+	
+}
+.jumbotron{
+	box-shadow:none;
+	background-color: #ffffff;
+	height:100%;
+	margin-top:0px;
+}
+body{
+	
+	background-color:#fff;
+	
+}
+
+
+
+
 }
 
 
 
 
 
+@media screen and (max-width: 400px) {
 
 
+#help-drawer-right{
+	position:fixed;
+	height:100%;
+	width:100%;
+	background-color: #ffffff;
+	right:-100%;
+	top:0px;
+	bottom:0px;
+	z-index:9999999999;
+	transition:0.3s ease ;
+		box-shadow:5px 0px 25px rgba(0, 0, 0, 0.5);
 
+}}
