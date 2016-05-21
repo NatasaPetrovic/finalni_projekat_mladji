@@ -49,11 +49,14 @@ opacity: 0.3;
 	
 	
 background-image:url("download.png");
+
+background-position: center;
+
 background-repeat: no-repeat;
 background-size: 100% 100%;
 	background-color:#ffffff;
 	width:75%;
-	height:700px;
+	height:800px;
 	position:relative;
 	padding-top: 20px;
 	padding-bottom:20px;
@@ -676,7 +679,24 @@ footer {
 	background-color: #e5e5e5;
 }
 
+
+ #menu-left{
+        
+        visibility: visible;
+        
+    }
+   
+
 @media screen and (max-width: 1201px) {
+    
+    
+     #menu-left{
+        visibility: visible;
+       
+        
+    }
+    
+
     #main-content-window-nem{
 	
 	background-color:#ffffff;
@@ -743,7 +763,6 @@ body{
 
 
 
-
 }
 
 
@@ -765,4 +784,23 @@ body{
 	transition:0.3s ease ;
 		box-shadow:5px 0px 25px rgba(0, 0, 0, 0.5);
 
-}}
+}
+    
+   
+   
+    
+}
+@media screen and (max-width: 1201px) {
+    
+    
+     #menu-left{
+        visibility: visible;
+          		z-index:99999999;
+
+        
+    }
+
+	
+}
+    
+   
